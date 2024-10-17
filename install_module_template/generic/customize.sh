@@ -24,7 +24,7 @@ MODULE_CUSTOM_CONFIG_PATH="/data/adb/"$module_id
 # 基础函数
 add_props() {
   local line="$1"
-  printf "\n$line" >>"$MODPATH"/system.prop
+  printf "\n$line" >> "$MODPATH"/system.prop
 }
 
 key_check() {
@@ -293,7 +293,7 @@ if [[ "$API" -ge 33 ]]; then
     ui_print "*********************************************"
   else
     ui_print "*********************************************"
-    ui_print "- 条件未满足，跳过游戏显示布局设置。"
+    ui_print "- 跳过游戏显示布局设置，如需重新开启，请卸载模块后重新安装模块。"
     ui_print "*********************************************"
   fi
   # 展示游戏显示布局选择器
@@ -373,7 +373,6 @@ if [[ $is_need_install_ksu_web_ui == 1 ]]; then
   ui_print "*********************************************"
   ui_print "- 是否安装KsuWebUI？"
   ui_print "- [重要提醒]: 安装并赋予Root权限可以可视化管理模块提供的部分功能"
-  ui_print "- [重要提醒]: 模块的Web UI正在开发中，未正式上线，请耐心等待后续动态~"
   ui_print "  音量+ ：是"
   ui_print "  音量- ：否"
   ui_print "*********************************************"
