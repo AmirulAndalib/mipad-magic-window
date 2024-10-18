@@ -16,13 +16,9 @@
 
 请自备救砖模块再进行测试版本模块的升级，否则可能导致卡米。
 
-[应用布局优化]
-
-- 修复企业微信丢失左右滑动条的问题
-
 [Web UI]
 
-- 优化搜索应用时的搜索体验
+- 新增传送门快捷入口，(/system/product/priv-app/MIUIContentExtension/MIUIContentExtension.apk)存在时则显示快捷入口
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
